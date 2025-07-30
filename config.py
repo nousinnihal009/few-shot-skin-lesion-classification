@@ -1,23 +1,27 @@
 # config.py
 
 class Config:
-    # Dataset paths
-    data_path = "data/"        # path where images are stored
-    save_model_path = "models/proto_net.pth"
-    results_path = "results/"
+    """
+    Configuration for few-shot skin lesion classification.
+    """
 
-    # Few-shot setup
-    n_way = 5        # 5 classes per episode
-    k_shot = 1       # 1 support image per class
-    q_queries = 5    # 5 query images per class
+    # Dataset paths
+    DATA_PATH = "data/"                     # Folder containing all images
+    SAVE_MODEL_PATH = "models/proto_net.pth"
+    RESULTS_PATH = "results/"
+
+    # Few-shot learning setup
+    N_WAY = 5                               # Number of classes per episode
+    K_SHOT = 1                              # Number of support samples per class
+    Q_QUERIES = 5                           # Number of query samples per class
 
     # Image processing
-    image_size = 224
+    IMAGE_SIZE = 224                        # Resize all images to this size
 
-    # Training setup
-    meta_batch_size = 32
-    num_episodes = 1000
-    learning_rate = 1e-3
+    # Training hyperparameters
+    META_BATCH_SIZE = 32
+    NUM_EPISODES = 1000
+    LEARNING_RATE = 1e-3
 
-    # Device
-    device = "cuda"  # "cpu" if no GPU
+    # Device configuration
+    DEVICE = "cuda"                         # Change to "cpu" if no GPU available

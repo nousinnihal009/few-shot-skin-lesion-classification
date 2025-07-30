@@ -56,5 +56,5 @@ Training uses **episodic meta-learning**:
 
 ### 1️⃣ Clone this repo  
 ```bash
-git clone https://github.com/<your-username>/few-shot-skin-lesion-classification.git
+git clone https://github.com/<nousinnihal009>/few-shot-skin-lesion-classification.git
 cd few-shot-skin-lesion-classification
